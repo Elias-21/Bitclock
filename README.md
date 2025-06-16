@@ -5,7 +5,7 @@
 
 
 
-A Waybar module written c to fetch and display Bitcoin stats like current highest block. 
+A Waybar module written in c to fetch and display Bitcoin stats like current highest block or Balance of a Wallet. 
 
 Currently available information:
 - Block heigth
@@ -43,16 +43,16 @@ The makefile was made for linux and will only work for it.
 ### !Make sure to set your btc address when using the Example Config!
 
 
-## configuration:
+## Configuration:
 
 Take a look at the example configuration to find all currently supported features.
 
 
 
 
-## German Translation (Deutsche Übersetzung}
+# German Translation (Deutsche Übersetzung}
 
-Ein Waybar Modul das Informationen ueber die Bitcoin Blockchain anzeigt.
+Ein Waybar Modul das Informationen über die Bitcoin Blockchain anzeigt.
 
 Momentan verfügbare Informationen:
 - Block höhe
@@ -91,4 +91,4 @@ Die Makefile wurde nur für Linux erstellt und funktioniert daher nur für Linux
 
 ## Konfigurieren:
 
-chauen sie sich die Beispiel Konfiguration an um alle momentan unterstützten funktionen zu sehen.
+Schauen sie sich die Beispiel Konfiguration an um alle momentan unterstützten funktionen zu sehen.
