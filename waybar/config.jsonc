@@ -1,0 +1,36 @@
+{
+	"layer": "bottom",
+	"position": "top",
+	"height": 20,
+	"spacing": 4,
+
+	"modules-left": [
+		"custom/bitclock-balance-sats"
+	],
+	"modules-center": [
+		"custom/bitclock-block-height"
+	],
+	"modules-right": [
+		"custom/bitclock-balance-btc"
+	],
+
+	"custom/bitclock-block-height": {
+		"exec": "~/.config/waybar/bitclock --height",
+		"interval": 60,
+		"return-type": "json",
+		"format": "Block height: {text}"
+	},
+	"custom/bitclock-balance-sats": {
+		"exec": "~/.config/waybar/bitclock --balance-sats <address>",
+		"interval": 60,
+		"return-type": "json",
+		"format": "Balance SATS: {text}"
+	},
+	"custom/bitclock-balance-btc": {
+		"exec": "~/.config/waybar/bitclock --balance-btc <address>",
+		"interval": 60,
+		"return-type": "json",
+		"format": "Balance BTC: {text}"
+	}
+
+}
