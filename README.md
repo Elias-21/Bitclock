@@ -5,7 +5,7 @@
 
 
 
-A Waybar module written in c to fetch and display Bitcoin stats like current highest block or Balance of a Wallet. 
+A Waybar module written in C to fetch and display Bitcoin stats like current highest block or Balance of a Wallet. 
 
 Currently available information:
 - Block heigth
