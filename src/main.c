@@ -4,6 +4,8 @@
 #include <inttypes.h>
 #include "balance.h"
 #include "height.h"
+#include "price.h"
+
 
 int main(int argc, char* argv[]) {
 	if (argc < 2) {
@@ -22,8 +24,13 @@ int main(int argc, char* argv[]) {
 		double balance = getBalanceBTC(argv[2]);
 		printf("{\"text\": \"%f\"}", balance);
 
+	}else if(strcmp(argv[1], "--price") == 0){
+		uint64_t price = getPrice(argv[2]);
+		printf("{\"text\": \"%" PRIu64 "\"}", price);
+
 	}else {
 		printf("Not a valid argument\n");
+		return 1;
 	}
 
 	return 0;

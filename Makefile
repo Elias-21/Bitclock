@@ -12,7 +12,9 @@ all:
 	$(CC) $(CFLAGS) -c $(SRC)/requests.c -o $(BUILD)/requests.o
 	$(CC) $(CFLAGS) -c $(SRC)/height.c -o $(BUILD)/height.o
 	$(CC) $(CFLAGS) -c $(SRC)/balance.c -o $(BUILD)/balance.o
-	$(CC) $(CFLAGS) -lcurl -ljson-c -o bitclock $(BUILD)/main.o $(BUILD)/requests.o $(BUILD)/height.o $(BUILD)/balance.o
+	$(CC) $(CFLAGS) -c $(SRC)/price.c -o $(BUILD)/price.o
+
+	$(CC) $(CFLAGS) -lcurl -ljson-c -o bitclock $(BUILD)/main.o $(BUILD)/requests.o $(BUILD)/height.o $(BUILD)/balance.o $(BUILD)/price.o
 
 
 #  Installs everything but keeps the user config if its there

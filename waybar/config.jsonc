@@ -2,18 +2,25 @@
 	"layer": "bottom",
 	"position": "top",
 	"height": 20,
-	"spacing": 4,
+	"spacing": 10,
 
 	"modules-left": [
 		"custom/bitclock-balance-sats"
 	],
 	"modules-center": [
+		"custom/bitclock-price",
 		"custom/bitclock-block-height"
 	],
 	"modules-right": [
 		"custom/bitclock-balance-btc"
 	],
 
+	"custom/bitclock-price": {
+		"exec": "~/.config/waybar/bitclock --price <currency>",
+		"interval": 60,
+		"return-type": "json",
+		"format": "Price: {text}"
+	},
 	"custom/bitclock-block-height": {
 		"exec": "~/.config/waybar/bitclock --height",
 		"interval": 60,

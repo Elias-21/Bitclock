@@ -11,6 +11,10 @@ Currently available information:
 - Block heigth
 - Wallet balance in BTC
 - Wallet balance in Sats
+- Bitcoin price
+
+Uses blockstream.info for Blockchain information and api.coingecko.com/ for the Bitcoin Price.
+
 
 More displayable information available soon.
 
@@ -58,6 +62,9 @@ Momentan verfügbare Informationen:
 - Block höhe
 - Wallet guthaben in BTC
 - Wallet guthaben in Sats
+- Bitcoin Preis
+
+Benutzt blockstream.info für Blockchain informationen und https://api.coingecko.com für den Bitcoin preis.
 
 Mehr Informationen zum anzeigen in zukunft verfügbar.
 
